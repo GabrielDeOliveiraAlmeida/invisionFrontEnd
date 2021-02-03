@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Grid, { GridSpacing } from '@material-ui/core/Grid';
 import { Typography } from '@material-ui/core';
 
-export const CarrouselContainer = styled(Grid)`
+export const CarrouselContainer = styled.div`
 
     display: flex;
     justify-content: center;
@@ -24,7 +24,7 @@ export const CarrouselContainer = styled(Grid)`
 `
 
 
-export const ItensCarrousel = styled(Grid) ` 
+export const ItensCarrousel = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;

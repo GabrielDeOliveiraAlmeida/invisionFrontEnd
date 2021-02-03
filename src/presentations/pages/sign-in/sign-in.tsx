@@ -1,9 +1,8 @@
 import React, {memo} from 'react';
 import { Grid, TextField, Typography } from '@material-ui/core';
-import { ILoginTitleForm } from '../login-titleform/types';
 
 
-const LoginTitleForm: React.FC<ILoginTitleForm> = (props: ILoginTitleForm) => {
+const SingIn: React.FC = () => {
 
     return (
         <Grid container>
@@ -13,4 +12,4 @@ const LoginTitleForm: React.FC<ILoginTitleForm> = (props: ILoginTitleForm) => {
     )
 }
 
-export default memo(LoginTitleForm);
+export default memo(SingIn);

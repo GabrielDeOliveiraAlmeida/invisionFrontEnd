@@ -36,8 +36,8 @@ const Carrousel: React.FC = () => {
     }
 
     return (
-        <CarrouselContainer container>
-            <Grid item className={'CardMobileItem'}>
+        <CarrouselContainer>
+            <div className={'CardMobileItem'}>
                 <SwipeableViews
                     index={index}
                     onChangeIndex={handleStepChange}
@@ -54,8 +54,8 @@ const Carrousel: React.FC = () => {
                         )
                     })}
                 </SwipeableViews>
-            </Grid>
-            <Grid item>
+            </div>
+            <div>
                 <MobileStepper
                     className={'CardMobileSlider'}
                     color={"white"}
@@ -66,7 +66,7 @@ const Carrousel: React.FC = () => {
                     backButton={() => { }}
                     nextButton={() => { }}
                 />
-            </Grid>
+            </div>
         </CarrouselContainer>
     )
 }

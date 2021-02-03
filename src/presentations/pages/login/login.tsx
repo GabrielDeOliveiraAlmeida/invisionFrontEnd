@@ -1,6 +1,6 @@
 import Grid from '@material-ui/core/Grid/Grid';
 import React from 'react';
-import { LoginCarrousel, LoginHeader } from '../../components';
+import { LoginCarrousel, LoginHeader, LoginTitleForm } from '../../components';
 import { ContainerCarrousel, ContainerLogin, ContainerMain } from './styles';
 
 import GlobalStyle from '../../../styles/global';
@@ -9,12 +9,13 @@ const Login: React.FC = () => {
 
     return (
         <>
-            <ContainerMain container xs={12}>
-                <ContainerCarrousel item xs={6} >
+            <ContainerMain>
+                <ContainerCarrousel>
                     <LoginCarrousel />
                 </ContainerCarrousel>
-                <ContainerLogin item xs={6}>
+                <ContainerLogin >
                     <LoginHeader />
+                    <LoginTitleForm title={'Welcome to Invision'} />
                 </ContainerLogin>
             </ContainerMain>
             <GlobalStyle />
