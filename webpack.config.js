@@ -25,7 +25,15 @@ module.exports = {
             test: /\.ts(x?)$/,
             loader: 'ts-loader',
             exclude: /node_modules/
-        }]
+        },
+        {
+            test: /.*\.(png|svg)$/i,
+            use: [
+                {loader: 'file-loader'}
+            ]
+        }
+    
+    ]
     },
     externals: {
         react: 'React',
