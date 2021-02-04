@@ -3,7 +3,9 @@ import React from 'react';
 import { LoginCarrousel, LoginHeader, LoginSingIn, LoginTitleForm } from '../../components';
 import { ContainerCarrousel, ContainerLogin, ContainerMain } from './styles';
 
+
 import GlobalStyle from '../../../styles/global';
+import { loginValidator } from './login-validation-factory';
 
 const Login: React.FC = () => {
 
@@ -16,7 +18,7 @@ const Login: React.FC = () => {
                 <ContainerLogin >
                     <LoginHeader />
                     <LoginTitleForm title={'Welcome to Invision'} />
-                    <LoginSingIn />
+                    <LoginSingIn validation={loginValidator()} />
                 </ContainerLogin>
             </ContainerMain>
             <GlobalStyle />

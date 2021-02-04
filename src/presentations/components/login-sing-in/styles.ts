@@ -40,6 +40,15 @@ export const TextFieldBody = styled.div`
     max-width: 433px;
 `;
 
+export const FormBody = styled.form` 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+`;
+
+
 export const SingInLink = styled(Link)` 
     display: flex;
     flex-direction: row;
