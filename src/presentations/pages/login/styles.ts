@@ -8,7 +8,7 @@ export const ContainerMain = styled.div`
     flex-direction: row;
     align-items: stretch;
 
-    @media(max-width: 650px){
+    @media(max-width: 800px){
         flex-direction: column;
         height: 100%;
     }
@@ -20,9 +20,7 @@ export const ContainerCarrousel = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    padding-bottom: 10vh;
     background-color: #A9C5BA;
-    width: 100%;
     @media(max-width: 650px){
         padding-bottom: 0px;
     }

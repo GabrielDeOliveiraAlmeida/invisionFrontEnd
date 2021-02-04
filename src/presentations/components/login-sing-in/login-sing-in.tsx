@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Button, Divider, Link, TextField, Typography } from '@material-ui/core';
-import { LoginTitleForm } from '../index';
+import { Link, SvgIcon, TextField, Typography } from '@material-ui/core';
 import { ButtonGrid, ContainerMain, CreateAccountGrid, DividerElement, DividirGrid, FormBody, GoogleButton, SignInButton, SignInTextField, SingInLink, TextFieldBody } from './styles';
 import { Validation } from 'validation/protocols/validations';
 
+const google = require("../../../assets/files/Google__G__Logo.svg");
 
 type Props = {
     validation: Validation;
@@ -88,6 +88,9 @@ const LoginSingIn: React.FC<Props> = ({ validation }: Props) => {
         </DividirGrid>
     )
 
+    const googleIcon = () => (
+        <SvgIcon component={google} viewBox="0 0 600 476.6" /> 
+    )
 
     return (
         <ContainerMain>
@@ -95,7 +98,9 @@ const LoginSingIn: React.FC<Props> = ({ validation }: Props) => {
             {dividirGrid()}
             <ButtonGrid>
                 <GoogleButton 
-                    variant="contained">
+                    variant="contained"
+                    startIcon={googleIcon}
+                    >
                     <Typography>
                         Sign In with Google
                 </Typography>

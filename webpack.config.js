@@ -27,10 +27,8 @@ module.exports = {
             exclude: /node_modules/
         },
         {
-            test: /.*\.(png|svg)$/i,
-            use: [
-                {loader: 'file-loader'}
-            ]
+            test: /\.(png|jpe?g|gif|svg)$/i,
+            use: ['@svgr/webpack', 'url-loader'],
         }
     
     ]

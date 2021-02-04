@@ -6,7 +6,7 @@ export const HeaderStyled = styled(Grid)`
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
-    padding: 48px;
+    padding: 24px 24px 16px 24px;
     width: 100%;
     p { 
         font-size: 35px;

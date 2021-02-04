@@ -5,11 +5,12 @@ import { Typography } from '@material-ui/core';
 export const CarrouselContainer = styled.div`
 
     display: flex;
+    flex: 1;
     justify-content: center;
     flex-direction: column;
     background-color: transparent;
-    padding: 48px;
-
+    min-height: 500px;
+    align-items: stretch;
     .MuiMobileStepper-dot{
             background-color: white;
             opacity: 0.5;
@@ -23,6 +24,7 @@ export const CarrouselContainer = styled.div`
     .CardMobileItem{
         display: flex;
         flex-direction: column;
+        padding: 0px 24px 0px 24px;
     }
 
     .CardMobileSlider{
