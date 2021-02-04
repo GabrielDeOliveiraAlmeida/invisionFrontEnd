@@ -1,6 +1,5 @@
-import Grid from '@material-ui/core/Grid/Grid';
 import React from 'react';
-import { LoginCarrousel, LoginHeader, LoginTitleForm } from '../../components';
+import { LoginCarrousel, LoginHeader, LoginSingIn  } from '../../components';
 import { ContainerCarrousel, ContainerLogin, ContainerMain } from './styles';
 
 import GlobalStyle from '../../../styles/global';
@@ -15,12 +14,11 @@ const Login: React.FC = () => {
                 </ContainerCarrousel>
                 <ContainerLogin >
                     <LoginHeader />
-                    <LoginTitleForm title={'Welcome to Invision'} />
+                    <LoginSingIn />
                 </ContainerLogin>
             </ContainerMain>
             <GlobalStyle />
         </>
-
     )
 }
 

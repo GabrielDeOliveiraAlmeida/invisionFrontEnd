@@ -7,8 +7,8 @@ export const CarrouselContainer = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-width: 450px;
     background-color: transparent;
+    padding: 48px;
 
     .CardMobileItem{
         display: flex;
@@ -37,6 +37,5 @@ export const TitleCarrousel = styled(Typography) `
 
 export const DescriptionCarrousel = styled(Typography) `  
         color: white;
-
 
 `;
