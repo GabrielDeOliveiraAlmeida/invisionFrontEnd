@@ -25,6 +25,32 @@ export const SignInButton = styled(Button)`
     }
 `;
 
+
+export const GoogleButton = styled(Button)` 
+    &.MuiButton-contained{
+        padding: 8px 48px 8px 48px;
+        background-color: white;
+        border-radius: 100px;
+    }
+    p {
+        font-size: 16px;
+    }
+`;
+
+
+export const CreateAccountGrid = styled.div`  
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    p { 
+        font-size: 14px;
+        
+    }
+`;
+
+
 export const SignInTextField = styled.div` 
     display: flex;
     flex-direction: column;
@@ -56,7 +82,12 @@ export const SingInLink = styled(Link)`
     padding-right: 24px;
     width: 100%;
     max-width: 433px;
+`;
 
+
+export const NewAccountLink = styled(Link)` 
+    display: flex;
+    flex-direction: row;
 `;
 
 export const ButtonGrid = styled.div` 
