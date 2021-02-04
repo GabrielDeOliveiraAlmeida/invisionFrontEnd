@@ -14,7 +14,7 @@ const LoginSingIn: React.FC = () => {
                     <TextField label="User name or Email" />
                 </SignInTextField>
                 <SignInTextField>
-                    <TextField label="Password" />
+                    <TextField label="Password" type="password"/>
                 </SignInTextField>
             </TextFieldBody>
             <SingInLink href="#">

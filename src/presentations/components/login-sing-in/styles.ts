@@ -15,6 +15,7 @@ export const ContainerMain = styled.div`
 
 export const SignInButton = styled(Button)` 
     &.MuiButton-contained{
+        padding: 8px 48px 8px 48px;
         background-color: #707070;
         border-radius: 100px;
     }
