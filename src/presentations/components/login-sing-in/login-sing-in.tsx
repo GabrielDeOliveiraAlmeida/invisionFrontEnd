@@ -4,9 +4,6 @@ import { LoginTitleForm } from '../index';
 import { ButtonGrid, ContainerMain, CreateAccountGrid, DividerElement, DividirGrid, FormBody, GoogleButton, SignInButton, SignInTextField, SingInLink, TextFieldBody } from './styles';
 import { Validation } from 'validation/protocols/validations';
 
-type StateProps = {
-    errorMessage: string | null,
-}
 
 type Props = {
     validation: Validation;

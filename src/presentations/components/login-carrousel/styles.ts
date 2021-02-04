@@ -10,6 +10,16 @@ export const CarrouselContainer = styled.div`
     background-color: transparent;
     padding: 48px;
 
+    .MuiMobileStepper-dot{
+            background-color: white;
+            opacity: 0.5;
+    }
+    .MuiMobileStepper-dotActive{
+            background-color: white;
+            opacity: 1;
+            padding: 4px 8px 4px 8px;
+        }
+
     .CardMobileItem{
         display: flex;
         flex-direction: column;
@@ -19,6 +29,8 @@ export const CarrouselContainer = styled.div`
         display: flex;
         background: none;
         justify-content: center;
+
+        
     }
     
 `
@@ -31,11 +43,11 @@ export const ItensCarrousel = styled.div`
     align-items: center;
 `;
 
-export const TitleCarrousel = styled(Typography) `  
+export const TitleCarrousel = styled(Typography)`  
         color: white;
 `;
 
-export const DescriptionCarrousel = styled(Typography) `  
+export const DescriptionCarrousel = styled(Typography)`  
         color: white;
 
 `;
